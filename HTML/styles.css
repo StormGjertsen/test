@@ -1,0 +1,310 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    padding-top: 100px;
+    }
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    background-color: rgba(0, 94, 184);
+    border: black 2px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+.headergrid {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: 100%;
+    padding: 0 30px;
+}
+.sitetitle {
+    grid-column: 2;
+    align-self: center;
+    color: white;
+    font-size: 28px;
+    margin: 0;
+    text-decoration: none;
+}
+.navbar {
+    grid-column: 3;
+    align-self: center;
+    justify-self: end;
+    padding-right: 50px;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar li {
+    position: relative;
+    display: inline-block;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color:#005EB8;
+    min-width: 261px;
+    z-index: 1000;
+}
+.dropdown-content li a {
+    padding: 10px 14px;
+    color: white;
+    font-size:larger
+}
+.dropdown-content li a:hover {
+    background-color: #ffffff1d;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown > a {
+    font-size: 20px;
+    cursor: pointer;
+}
+.text{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-items: center;
+    background-color: rgb(0, 94, 184);
+    border: black 2px;
+}
+.textoverlay{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.item2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item2 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item2:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item3 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item3:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item4 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item4:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item5 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item5:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item6{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item6 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item6:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item7{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item7 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item7:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+.item8{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.item8 h2 {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+.item8:hover {
+    transform: scale(1.02); 
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* Begynnelse på Historyandidentity siden */
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    }
+.header2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    background-color: rgba(0, 94, 184);
+    border: black 2px;
+    }
