@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HistoryandIdentity</title>
-    <link rel="stylesheet" href="pages.css" />
+    <title>Traveltips</title>
+    <link rel="stylesheet" href="Javascript.css" />
   </head>
   <body>
     <main class="grid">
@@ -38,7 +38,7 @@
                   <li>
                     <a href="Food&music.html">Food, Music and Modern Culture</a>
                   </li>
-                  <li><a href="Javascript.html">Quiz!</a></li>
+                  <li><a href="Traveltips.html">Quiz!</a></li>
                   <li><a href="Sources.html">Sources</a></li>
                 </ul>
               </li>
@@ -46,33 +46,20 @@
           </nav>
         </div>
       </header>
-      <div class="text">
-        <h2>A Land of History and Identity</h2>
-        <p>
-          Scotland is a very old country. Throughout the country there are
-          castles, old towns and monuments to remind you of times gone by. Many
-          of these locations reflect tough fights for freedom and the
-          indomitable spirit of the Scottish people.
-        </p>
-        <p>
-          Scotland’s identity also consists of traditions, including bagpipes,
-          kilts and clan symbols that still have relevance today. There’s
-          history that’s been mixed with old legend, like stories of bold
-          warriors and bizarre creatures. This mix of true stories and good
-          tales is what makes the history of Scotland interesting.
-        </p>
-        <p>
-          When you learn more about Scotland, you understand why Scottish people
-          are passionate about their country.
-        </p>
+      <div class="quiz">
+        <div class="quiztext">
+          <h2>Scotland quiz!</h2>
+
+          <p id="question"></p>
+        </div>
+        <button onclick="answer('a')" id="btnA"></button>
+        <button onclick="answer('b')" id="btnB"></button>
+        <button onclick="answer('c')" id="btnC"></button>
+
+        <p id="result"></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
       </div>
-      <video controls class="video">
-        <source
-          src="BilderVSC/A land of history and identity edited.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
